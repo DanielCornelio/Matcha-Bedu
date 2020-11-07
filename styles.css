@@ -1,5 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #fffbf7;
+    font-family: 'Open Sans', sans-serif;
 }
 .header {
     margin-top: 40px;
@@ -12,17 +16,34 @@ body{
     display: inline-block;
     font-size: 16px;
   }
+  .logo, .nav, .acciones{
+      width: 33.33%;
+      vertical-align: middle;
+  }
+ .logo img{
+    display: block;
+    float: left;
+ }
+ .acciones {
+     text-align: right;
+ }
+ .nav ul{
+     text-align: center;
+ }
   li{
       display: inline;
+      padding: 0px 10px;
   }
   a{
       text-decoration: none;
-      color: rgba(0,0,0,.9);;
+      color: #025157;
   }
 h1{
     color: #025157;
-    font-family: "Alegreya", serif;
+    font-family: 'Rammetto One', cursive;
     text-align: center;
+    font-size: 40px;
+    margin-bottom: 24px
 }
 h4{
     color: #46484c;
@@ -37,10 +58,44 @@ button{
     color: #fff;
     background-color: #025157;
 }
+.acciones{
+    font-size: 14px;
+
+}
+.trial{
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border:0px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.green{
+    color: #67b54b;
+}
 p{
     text-align: center;
 }
 img{
     display: block;
     margin:0px auto;
+}
+input[type=email]{
+    width: 250px;
+    height: 55px;
+    padding: 10px;
+    border: 1px solid darkgrey;
+    outline: 0px;
+    border-radius: 8px 0px 0px 8px;
+    margin-right: -3px;
+}
+button[type=submit]{
+    width: 130px;
+    height: 55px;
+    padding: 10px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: -2px;
+    cursor: pointer;
 }
