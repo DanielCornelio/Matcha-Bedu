@@ -45,6 +45,8 @@ body{
     left: 0;
     right: 0;
     background-color: #fffbf7;
+    z-index: 1000;
+
   }
   main {
     margin-top: 285px;
@@ -137,6 +139,7 @@ button[type=submit]{
   .publish > form p {
     color: #025157;
     margin-right: 18px;
+    flex:1;
   }
   .promo{
       display: flex;
@@ -155,3 +158,72 @@ button[type=submit]{
     width: 120px;
     margin-top: 10px;
   }
+  .features {
+    display: grid;
+    /* Column */
+    /* grid-template-columns: 300px 300px; */
+    /* grid-template-columns: repeat(2, 300px); */
+    /* grid-template-columns: 500px 1fr;  Definimos una columna de 500px y la otra con el resto */
+    /* grid-template-columns: 1fr 1fr; Definimos ambas columnas con el mismo espacio */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* Row */
+    /* grid-template-rows: repeat(2, 330px); */
+    /* height: 660px; */
+    /* grid-template-rows: repeat(2, 1fr);   Si quiero usar medidas relativas se debe poner un height para hacer el calculo de la medida */
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+    background-color: #025157;
+    padding: 5% 10%;
+
+
+  }
+  .feature-card {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+  align-items: center;
+  overflow: hidden;
+  }
+
+  .feature-content {
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+  }
+  .feature-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  .feature-content img {
+    width: 50px;
+  }
+  .feature-content h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+  }
+  .feature-content p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+  }
+  .feature-content a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .feature-image {
+    flex: 1;
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
+  }
+  .features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
+  margin-top: 0;
+  height: 100%;
+}    
