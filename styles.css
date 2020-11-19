@@ -237,6 +237,12 @@ button[type=submit]{
 .overview{
   flex: 2;
 }
+.overview h2{
+  font-family: 'Rammetto One', cursive;
+  color: #025157;
+
+  
+}
 .overview > figure{
   width: 80%;
 }
