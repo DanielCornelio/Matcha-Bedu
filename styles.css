@@ -350,7 +350,6 @@ button[type=submit]{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 60px;
-  grid-auto-flow: column;
   padding: 5% 10%;
 }
 .card-step{
@@ -359,12 +358,40 @@ button[type=submit]{
   background-color: #fff;
 
 }
-.card-step-image{
-}
 .card-step-bg{
   width: 100%;
+  height: 300px;
 }
 .card-step-icon{
   width: 10%;
-  position: relative;
+  position:   relative;
+  float: left;
+  top: -290px;
+  left: 10px;
+  
+}
+.card-step-body{
+  padding: 15px;
+}
+
+.card-step-body h3{
+  font-family: 'Rammetto One', cursive;
+  color: #025157;
+  margin: 20px 0px;
+
+}
+.card-step-body p{
+  text-align: left;
+  margin-bottom: 30px;
+}
+.card-step-body a{
+  /* vertical-align: text-bottom; */
+  color: #67b54b;
+  display: block;
+  text-align: left;
+  font-weight: bold;
+
+}
+#alinear{
+  margin-top: -22px;
 }
