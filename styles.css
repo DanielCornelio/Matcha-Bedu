@@ -231,24 +231,117 @@ button[type=submit]{
 }    
 .success-stories{
   background-color: #a1d683;
+
+}
+.center{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .overview{
-  flex: 2;
+  width: 50%;
+    text-align: left;
+    margin-right: 40px;
 }
 .overview h2{
   font-family: 'Rammetto One', cursive;
   color: #025157;
-
-  
+  text-align: left;
+  font-size: 45px;
 }
-.overview > figure{
+.overview p{
+  text-align: left;
+  font-size: 20px;
+}
+.overview button{
+  padding: 15px;
+  font-size: 18px;
+  border:0px;
+  border-radius: 5px;
+  margin: 20px 0px 30px 0px;
+}
+/* .overview > figure{
   width: 80%;
-}
+  display: block;
+  
+} */
 .overview > figure img{
-  width: 500px;
+  width: 600px;
+  float: left;
 }
 .carousel{
-  flex: 1;
+  margin: 50px 0px;
+}
+.card{
+  background-color: #fff;
+  border-radius: 10px;
+  width: 370px;
+
+}
+.card-media{
+  background-color: green;
+}
+
+.card-media figure img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  height: 20vw;
+}
+.company{
+  width: 100px;
+  height: 100px;
+  background-color: #f9da73;
+  border-radius: 50%;
+  position: relative;
+  left:70%;
+  top: -75px;
+}
+.company figure{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company figure img{
+  width: 80%;
+}
+.card-body {
+  text-align: left;
+  padding: 10px;
+  /* background-color: red; */
+  position: relative;
+  top: -70px;
+
+}
+.card-body h4{
+  color: #025157;
+  text-align: left; 
+  margin-bottom: 15px;
+}
+.results{
+  display: flex;
+  align-items: center;
+  margin-top: 20px
+}
+.results img{
+  width: 10%;
+  height: 10%;
+}
+.results p{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+.card-footer{
+  padding: 10px;
+  position: relative;
+  top: -45px;
+}
+.card-footer button{
+  width: 100%;
+  border:0px;
+  border-radius: 5px;
+  padding: 15px 0px;
+  font-size: 18px;
 }
