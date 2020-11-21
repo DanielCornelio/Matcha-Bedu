@@ -345,3 +345,26 @@ button[type=submit]{
   padding: 15px 0px;
   font-size: 18px;
 }
+
+.steps{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  grid-auto-flow: column;
+  padding: 5% 10%;
+}
+.card-step{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #fff;
+
+}
+.card-step-image{
+}
+.card-step-bg{
+  width: 100%;
+}
+.card-step-icon{
+  width: 10%;
+  position: relative;
+}
