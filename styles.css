@@ -54,6 +54,7 @@ body{
     margin-top: 285px;
     text-align: center;
   }
+  
 h1{
     color: #025157;
     font-family: 'Rammetto One', cursive;
@@ -269,6 +270,9 @@ button[type=submit]{
   width: 600px;
   float: left;
 }
+.success-stories .stories-carousel .carousel-indicators {
+  position: static; /** ó: position: static; */
+}
 .carousel{
   margin: 50px 0px;
 }
@@ -278,9 +282,9 @@ button[type=submit]{
   width: 370px;
 
 }
-.card-media{
+/* .card-media{
   background-color: green;
-}
+} */
 
 .card-media figure img {
   width: 100%;
@@ -296,14 +300,14 @@ button[type=submit]{
   left:70%;
   top: -75px;
 }
-.company figure{
+.company {
   width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.company figure img{
+.company  img{
   width: 80%;
 }
 .card-body {
@@ -419,7 +423,18 @@ button[type=submit]{
   .acciones {
     display: none;
   }
-  main {
+  .navbar-light .nav-item .nav-link {
+    color: #025157;
+  }
+  
+  .navbar-light .navbar-toggler {
+    border-color: #025157;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  main{
     margin-top: 130px;
   }
   h1 {
@@ -433,7 +448,7 @@ button[type=submit]{
     
 }
 button[type=submit]{
-    width: 30%
+    width: 40%
 }
 .promo {
   flex-direction: column;
@@ -471,5 +486,44 @@ button[type=submit]{
   .feature-image {
     display: none;
   }
+.center{
+  flex-direction: column;
+}
+.overview{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 
+}
+.overview h2{
+  font-size: 30px;
+  margin-top:20px;
+}
+.overview > figure img{
+  width: 100%;
+
+}
+.stories-carousel{
+  width: 90%;
+}
+
+.card{
+  width: 100%;
+}
+.company{
+  left: 67%;
+}
+.card-media figure img {
+  height: 80vw;
+  /* width: 90%; */
+}
+.description{
+  margin: 0px 5%;
+}
+.explore{
+  width: 90%;
+}
+.steps{
+  grid-template-columns: repeat(1, 1fr);
+}
 }
