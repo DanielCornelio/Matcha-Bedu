@@ -526,4 +526,11 @@ button[type=submit]{
 .steps{
   grid-template-columns: repeat(1, 1fr);
 }
+.card-step{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.card-step-icon{
+  left: -170px;
+}
 }
